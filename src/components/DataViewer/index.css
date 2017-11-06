@@ -1,0 +1,7 @@
+.DataViewer > .controls > * {
+  margin-right: 1rem;
+}
+
+.nv-chart {
+  height: 100%;
+}

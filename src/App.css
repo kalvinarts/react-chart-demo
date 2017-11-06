@@ -1,0 +1,12 @@
+.App {
+  height: 100%;
+}
+
+.AppHead {
+  text-align: center;
+}
+
+.AppBody {
+  padding: 1rem;
+  overflow: scroll;
+}
