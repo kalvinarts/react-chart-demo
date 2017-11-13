@@ -50,32 +50,10 @@ class Store {
   }
 
   // Formatter for the X axis labels
-  formatX = d => {
-    // Return the formated date
-    return moment(d).format('Y-M-D')
-  };
+  formatX = d => moment(d).format('Y-M-D');
 
   // Formatter for the Y axis labels
-  formatY = d => {
-    // Get the maximum value
-    let max = -1000;
-    this.chartData[0].values
-    .forEach(el => el.y > max ?
-      max = el.y :
-      max
-    );
-    // Get the minumum value
-    let min = max;
-    this.chartData[0].values
-    .forEach(el => el.y < min ?
-      min = el.y :
-      min
-    );
-    // Get the ratio
-    const ratio = (d +1) / 2;
-    // Return the label text
-    return parseFloat(min + ((max - min) * ratio)).toFixed(1);
-  }
+  formatY = d => d.toFixed(2);
 }
 
 export default Store;

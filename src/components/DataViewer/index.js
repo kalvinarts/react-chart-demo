@@ -55,6 +55,7 @@ class DataViewer extends Component {
             max={10}
             step={0.1}
             defaultValue={1}
+            value={this.props.store.coefficient}
           />
         </div>
         <div className="content flex">
